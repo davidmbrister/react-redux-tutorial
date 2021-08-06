@@ -1,0 +1,25 @@
+PRESENTATIONAL COMPONENTS
+
+- TodoList :  a list of visible todos 
+  -todos: Array is an array of todo items with { id, text, completed }
+  -onTodoClick(id: number) a callback to invoke when a todo is clicked
+
+-Todo is a single Todo item (appearning in TodoList)
+  -text: string is the text to show
+  -completed: boolean determining whether it's crossed out
+  - onClick() callback to invoke when todo is clicked
+
+-Link is a link with a callback  - onClick is a callback to invoke when the link is clicked
+
+-Footer is where we let the user change the filter
+
+-App is the root component that renders everything else 
+
+CONTAINER COMPONENTS
+
+-VisibleTodoList filters the todos according to the current visibility filter and renders a TodoList
+-FilterLink gets the current visibility filter and renders a Link
+  filter: string is the visibility filter it represents
+
+BOTH TYPES
+AddTodo
